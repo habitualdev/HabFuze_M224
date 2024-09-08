@@ -1,4 +1,19 @@
 	thisgun = _this select 0;
+	
+	thisgun addEventHandler ["GetIn", {
+		params ["_vehicle", "_role", "_unit", "_turret"];
+		_hp = "land_HelipadEmpty_F" createvehicle (getPos _vehicle);
+		_hp setDir (getDir _vehicle);
+    	_vehicle attachto [_hp];
+		}];
+	
+	this addEventHandler ["GetOut", {
+		params ["_vehicle", "_role", "_unit", "_turret", "_isEject"];
+		_hp = attachedTo _vehicle;
+		detach _vehicle;
+        deleteVehicle _hp;
+		}];
+	
 	private _gunName = getObjectID thisgun;
 	explosionType = "NDS_A_60mm_HE";
 	
