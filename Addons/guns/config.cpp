@@ -11,3 +11,5 @@
 #include "CfgFunctions.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgAmmo.hpp"
+#include "CfgMagazines.hpp"
+#include "CfgCloudlets.hpp"

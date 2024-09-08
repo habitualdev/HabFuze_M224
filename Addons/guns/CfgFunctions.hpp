@@ -8,6 +8,10 @@ class CfgFunctions
             {
             	file="habfuze_M224\AddOns\fuze_functions\m224_fuzes.sqf";
             };
+            class init_m224_mortar
+            {
+            	file="habfuze_M224\AddOns\fuze_functions\m224_mortar.sqf";
+            	};
         };
     };
 };

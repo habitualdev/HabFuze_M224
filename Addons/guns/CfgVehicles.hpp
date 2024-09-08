@@ -8,7 +8,10 @@ class CfgVehicles {
 		
 	};
 	class Mortar_01_Base_F: StaticMortar {
-		
+		class Turrets
+        		{
+        			class MainTurret;
+        		};
 	};
 	
 	class NDS_M224_mortar_base : Mortar_01_Base_F{
@@ -23,7 +26,7 @@ class CfgVehicles {
 	displayname = "M224 VT Fuze";
 		scopeCurator = 2;
 		class EventHandlers {
-			init = "(_this select 0) execVM ""\z\avm224\addons\mortar\scripts\NDS_M224_init.sqf"";_this call HAB_FUZE_M224_fnc_init_m224_fuzes"
+			init = "(_this select 0) call HAB_FUZE_M224_fnc_init_m224_mortar; _this call HAB_FUZE_M224_fnc_init_m224_fuzes";
 			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
 		};
 		class ACE_CSW {
@@ -36,7 +39,6 @@ class CfgVehicles {
             ammoLoadTime = 2;   // How long it takes in seconds to load ammo into the weapon           
             ammoUnloadTime = 2; // How long it takes in seconds to unload ammo from the weapon
             desiredAmmo = 1;  // When the weapon is reloaded it will try and reload to this ammo capacity
-
         };
 	};
 };

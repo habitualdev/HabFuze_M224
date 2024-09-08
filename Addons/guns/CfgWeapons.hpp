@@ -1,6 +1,28 @@
 class CfgWeapons {
-class NDS_W_M224_mortar;
+    class mortar_82mm;
+        class NDS_W_M224_mortar: mortar_82mm {
+            magazines[] =
+            {
+                "NDS_M_6Rnd_60mm_HE",
+                "NDS_M_6Rnd_60mm_HE_0",
+                "NDS_M_6Rnd_60mm_ILLUM",
+                "avm224_M_6Rnd_60mm_ILLUM_IR",
+                "NDS_M_6Rnd_60mm_SMOKE",
+                "HabFuze_M_6Rnd_60mm_SMOKE_0",
+                "HabFuze_M_6Rnd_60mm_SMOKE"
+            };
+        };
     class habfuze_m224_mortar_proxy: NDS_W_M224_mortar {
+        magazines[] =
+                    {
+                        "NDS_M_6Rnd_60mm_HE",
+                        "NDS_M_6Rnd_60mm_HE_0",
+                        "NDS_M_6Rnd_60mm_ILLUM",
+                        "avm224_M_6Rnd_60mm_ILLUM_IR",
+                        "NDS_M_6Rnd_60mm_SMOKE",
+                        "HabFuze_M_6Rnd_60mm_SMOKE_0",
+                        "HabFuze_M_6Rnd_60mm_SMOKE"
+                    };
         magazineReloadTime = 0.5;
     };
      class Launcher;

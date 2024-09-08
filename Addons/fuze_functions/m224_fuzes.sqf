@@ -1,3 +1,4 @@
+
 	thisgun = _this select 0;
 	
 	thisgun addEventHandler ["GetIn", {
