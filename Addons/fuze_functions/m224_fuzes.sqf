@@ -1,4 +1,18 @@
+    fn_HabFuze_WP_smoke = {
+        private ["_smokegen", "_smokegen2", "_pos", "_pos2"];
 
+        if (!hasinterface) exitwith {};
+
+        _pos = [(_this select 0), _this select 1, 0];
+        _pos2 = [((_this select 0)+5), _this select 1, 0];
+
+        _smokegen = "#particlesource" createvehicle _pos;
+        _smokegen setPosATL _pos;
+        _smokegen setParticleClass "HabFuze_WPLinger";
+
+        sleep 45.0;
+        deletevehicle _smokegen;
+    };
 	thisgun = _this select 0;
 	
 	thisgun addEventHandler ["GetIn", {

@@ -41,8 +41,8 @@ class CfgCloudlets
     		randomDirectionPeriodVar=0;
     		randomDirectionIntensityVar=0;
             damageType="Fire";
-    		coreDistance=3;
-    		coreIntensity=1.25;
+    		coreDistance=7;
+    		coreIntensity=200;
     		damageTime=0.1;
     		emissiveColor[] = {{30,30,30,0},{0,0,0,0}};
     };

@@ -26,7 +26,7 @@ class CfgVehicles {
 	displayname = "M224 VT Fuze";
 		scopeCurator = 2;
 		class EventHandlers {
-			init = "(_this select 0) call HAB_FUZE_M224_fnc_init_m224_mortar; _this call HAB_FUZE_M224_fnc_init_m224_fuzes";
+			init = "(_this select 0) execVM ""\z\avm224\addons\mortar\scripts\NDS_M224_init.sqf""; _this call HAB_FUZE_M224_fnc_init_m224_fuzes";
 			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
 		};
 		class ACE_CSW {

@@ -7,6 +7,8 @@ class CfgAmmo{
 
 	class HabFuze_A_60mm_SMOKE: Sh_82mm_AMOS
     	{
+    	    ace_frag_metal = 10;
+    	    ace_frag_charge = 10;
     		hit=50;
     		indirectHit=30;
     		indirectHitRange=6;
